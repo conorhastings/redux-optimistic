@@ -1,0 +1,27 @@
+{
+  "name": "redux-optimistic",
+  "version": "0.0.0",
+  "description": "simple unopinionted user controlled optimistic updates for redux",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "tape test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conorhastings/redux-optimistic.git"
+  },
+  "keywords": [
+    "redux",
+    "optimistic",
+    "react",
+    "remote",
+    "updates",
+    "rollback"
+  ],
+  "author": "Conor Hastings",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/conorhastings/redux-optimistic/issues"
+  },
+  "homepage": "https://github.com/conorhastings/redux-optimistic#readme"
+}
