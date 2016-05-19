@@ -1,9 +1,6 @@
-export default function optimisticMiddleware() {
-  return ({ getState }) => next => action => {
-    const prevState = getState();
+export default function optimistic() {
+  return () => next => action => {
     next(action);
-    remote.action()
-    .then(res => onSuccess(prevState, getState(), res))
-    .catch(e => onFail(prevState, getState(), e));
+    action.remote().then(res => action.success()).catch(action.failure)
   }
 }
